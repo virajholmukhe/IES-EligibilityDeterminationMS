@@ -41,7 +41,7 @@ public class EligibilityDeterminationServiceImpl implements EligibilityDetermina
         CitizenApplicationDTO citizenApplicationDTO = restTemplate2.exchange(url2, HttpMethod.GET, entity1, CitizenApplicationDTO.class).getBody();
 //        System.out.println(citizenApplicationDTO.toString());
 
-//        assert summaryDetails != null;
+    //    assert summaryDetails != null;
         String planName = summaryDetails.getPlanName().toUpperCase();
 
         List<EligibilityDetailsDTO> eligibilityDetailsDTOList = new ArrayList<>();
